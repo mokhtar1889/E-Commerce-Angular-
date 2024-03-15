@@ -1,0 +1,22 @@
+
+<div class="container my-5 bg-main-light p-5 rounded-2">
+
+    <h4 class="fw-bolder mb-5 "> My Wish List:</h4>
+
+        <div class="row mb-4" *ngFor="let product of productWishlist">
+            <div class="col-md-2">
+                <img [src]="product.imageCover" class="w-100" alt="">
+            </div>
+            <div class="col-md-8" >
+                    <h4 class="fw-bolder">{{product.title}}</h4>
+                    <p class="text-main mb-0 fw-bolder  ">{{product.price}}EGP</p>
+                    <button class="btn text-danger p-0 mt-2 fw-bolder" (click)="removeProduct(product._id)"><i class="fa-regular fa-trash-can"></i> Remove</button> 
+            </div>
+            <div class="col-md-2">
+                <button class="btn rounded-2 border-success  d-block  m-auto fw-bolder" (click)="addToCart(product._id)" >Add To Cart</button>
+            </div>
+            <hr class="m-1 ">
+        </div>
+</div>
+
+

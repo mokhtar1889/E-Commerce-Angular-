@@ -1,0 +1,8 @@
+<div class="container mt-5">
+
+    <h2 for="resetCode" class="fw-bolder">please enter your verification code:</h2>
+    <form [formGroup]="verifyCodeForm" class="mt-5" (ngSubmit)="verifyCode()" >
+        <input type="text" class="form-control mt-2" id="resetCode" formControlName="resetCode"/>
+        <button type="submit">Verify</button>
+    </form>    
+</div>

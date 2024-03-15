@@ -1,0 +1,34 @@
+#category{
+
+    border: 1px solid rgba(145,158,171,.2);
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+}
+#category h3{
+    color: #198754;
+    font-weight: bolder;
+}
+
+#category{
+   box-shadow:rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+}
+
+.subcategory{
+
+    border: 1px solid gray ;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight:900;
+    margin: 10px;
+}
+
+.subcategory p {
+    font-weight: bold;
+
+}
+.category-title{
+    color:#4fa74f;
+    font-weight: bolder;
+}

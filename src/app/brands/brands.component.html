@@ -1,0 +1,37 @@
+
+<div class="container p-5">
+  <h2 class="text-center mb-5 ">All Brands</h2>
+  <div class="row g-4">
+      <div class="col-md-3" *ngFor="let brand of allBrands">
+          <div class="container rounded-4 border border-2 brand" (click)="getBrand(brand._id)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img [src] ="brand.image" class="w-100 "/>
+            <p class="text-center ">{{brand.name}}</p>
+          </div>  
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Brand</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-between ">
+          <div class="align-self-center p-2  ">
+            <h2>{{brands.name}}</h2>
+            <p>{{brands.name}}</p>
+          </div>
+          <div>
+            <img [src]="brands.image" class="w-100 " />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
